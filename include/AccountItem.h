@@ -1,4 +1,11 @@
-#include "common.h"
+#include <string>
+#include <vector>
+
+using namespace std;
+
+#define INCOME "收入"
+#define EXPAND "支出"
+#define FILEPATH "./data/AccountBook.txt"
 
 struct AccountItem
 {
