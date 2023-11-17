@@ -1,17 +1,7 @@
 #include <fstream>
 #include <iostream>
-#include "AccountItem.h"
-void loadDataFromFile(vector<AccountItem>& items)
-{
-    ifstream input(FILEPATH);
-    
-    AccountItem item;
-    while (input >> item.itemType >> item.amount >> item.detail)
-    {
-        items.push_back(item);
-    }
-    input.close();
-}
+
+using namespace std;
 
 char readMenuSelection(int options)
 {

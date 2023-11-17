@@ -1,10 +1,13 @@
-#include "AccountItem.h"
-#include "Menu.h"
-#include "Operations.h"
+#include <iostream>
+#include "AccountItem.hpp"
+#include "Menu.hpp"
+#include "Operation.hpp"
+
+using namespace std;
 
 int main() 
 {
-    vector<AccountItem> items;
+    vector<AccountItem> items = {};
     loadDataFromFile(items);
 
     bool quit = false;
@@ -24,12 +27,14 @@ int main()
         case '2' : // 查询
             showQueryMenu();
             query(items);
+            break;
         case '3' : // 退出
             cout << "\n确认退出？（Y/N）: ";
             if (readQuitConfirm() == 'Y') 
             {
                 quit = true;
             }
+            break;
         default:
             break;
         }

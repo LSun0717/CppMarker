@@ -1,6 +1,5 @@
-#include <iostream>
-
-using namespace std;
+#ifndef MENU_HPP
+#define MENU_HPP
 
 // 显示主菜单
 void showMainMenu();
@@ -10,3 +9,5 @@ void showAccountMenu();
 
 // 显示查询菜单
 void showQueryMenu();
+
+#endif

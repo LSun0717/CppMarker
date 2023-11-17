@@ -1,5 +1,9 @@
+#ifndef ACCOUNTITEM_HPP
+#define ACCOUNTITEM_HPP
+
 #include <string>
 #include <vector>
+#include "AccountItem.hpp"
 
 using namespace std;
 
@@ -22,3 +26,5 @@ void update(vector<AccountItem>& items);
 
 // 查询账单
 void query(vector<AccountItem>& items);
+
+#endif
